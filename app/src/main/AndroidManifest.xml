@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nupa.drafthatch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/around_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+            <!--
+              <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".NuevoHatch"
+            android:label="@string/title_activity_nuevo_hatch" />
+        <activity
+            android:name=".imageUpload"
+            android:label="activity_image_upload" />
+        <activity
+            android:name=".user_settings"
+            android:label="@string/title_activity_user_settings"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDOHLlOQuDCHHTd4C3X_nZyfOhl5uBvFcI" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".actividadDrawer"
+            android:label="@string/title_activity_actividad_drawer"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".loginMenu"
+            android:label="@string/title_activity_login_menu"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Login_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActividadDetalleHatch"
+            android:label="@string/title_activity_actividad_detalle_hatch"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name=".PushNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="nupa.drafthatch" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ActividadNotificaciones"
+            android:screenOrientation="portrait"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <activity android:name=".HatchesNotificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".user_settings_categories"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivityDrawer"
+            android:label="@string/title_activity_main_activity_drawer"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/title_activity_main_screen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity_profile"
+            android:label="@string/title_activity_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".OtherProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NuevoHatchStep1"
+            android:label="@string/title_activity_nuevo_hatch2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NuevoHatchStep2"
+            android:label="@string/title_activity_nuevo_hatch2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NuevoHatchStep3"
+            android:label="@string/title_activity_nuevo_hatch2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NuevoHatchStep4"
+            android:label="@string/title_activity_actividad_detalle_hatch"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DetalleHatchModoMapa"
+            android:label="@string/title_activity_actividad_detalle_hatch"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityRegisterFirebase"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityAccount"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityCrashFirebase"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityLoginEmailPass"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityAdsFirebase"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityPushNotificationsFirebase"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityUsersFirebase"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityUsersUIFirebase"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResetPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ManageAccountFirebase"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".NuevoHatchStep1_2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ChatActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AyudaSoporteActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".loginMenuLoggedIn"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

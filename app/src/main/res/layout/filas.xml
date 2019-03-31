@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgCategoria"
+        android:src="@drawable/feed_deportes"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgCategoria"
+        android:layout_toEndOf="@+id/imgCategoria">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/textTitulo"
+        android:textSize="19sp"
+        android:textColor="#222222"
+        android:textStyle="bold"/>
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/txtFecha"
+
+        android:textColor="#999999"
+        android:textSize="12sp"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicacion"
+            android:id="@+id/txtUbicacion"
+            android:textColor="#999999"
+            android:textSize="12sp"
+
+            android:layout_alignTop="@+id/txtFecha"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/ic_watch"
+            android:layout_below="@+id/textTitulo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/ic_person_distancia"
+            android:layout_below="@+id/textTitulo"
+            android:layout_toLeftOf="@+id/txtUbicacion"
+            android:layout_toStartOf="@+id/txtUbicacion" />
+
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

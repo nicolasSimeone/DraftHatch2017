@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarNuevoHatchMap"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:background="#ffffffff"
+        android:clickable="false"
+        >
+
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            tools:context="nupa.drafthatch.ActivityMapa"
+            android:layout_height="350dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Ubicación del Evento!"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/map"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <requestFocus />
+
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageViewstep2"
+            android:src="@drawable/workflow_create_3"
+            android:layout_marginBottom="19dp"
+            android:layout_above="@+id/autoCompleteUbicacion"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <!-- The first child in the layout is for the main Activity UI-->
+
+</LinearLayout>

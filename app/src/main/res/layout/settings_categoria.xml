@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        app:srcCompat="@drawable/deportes_icon_big"
+        android:id="@+id/imgDeportes"
+        tools:layout_editor_absoluteY="175dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imgMusica"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/salidas_icon_big"
+        android:id="@+id/imgSalidas"
+        tools:layout_editor_absoluteY="305dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_below="@+id/imgDeportes"
+        android:layout_alignLeft="@+id/imgDeportes"
+        android:layout_alignStart="@+id/imgDeportes"
+        android:layout_marginTop="28dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/activismo_icon_big"
+        android:id="@+id/imgActivismo"
+        tools:layout_editor_absoluteY="305dp"
+        tools:layout_editor_absoluteX="209dp"
+        android:layout_alignTop="@+id/imgSalidas"
+        android:layout_alignLeft="@+id/imgMusica"
+        android:layout_alignStart="@+id/imgMusica" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/musica_icon_big"
+        android:id="@+id/imgMusica"
+        tools:layout_editor_absoluteY="175dp"
+        tools:layout_editor_absoluteX="209dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imgMascotas"
+        android:layout_toRightOf="@+id/imgFlash"
+        android:layout_toEndOf="@+id/imgFlash" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/mascotas_icon_big"
+        android:id="@+id/imgMascotas"
+        tools:layout_editor_absoluteY="47dp"
+        tools:layout_editor_absoluteX="209dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView18"
+        android:layout_toRightOf="@+id/imgFlash"
+        android:layout_toEndOf="@+id/imgFlash" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/flash_icon_big"
+        android:id="@+id/imgFlash"
+        tools:layout_editor_absoluteY="45dp"
+        tools:layout_editor_absoluteX="39dp"
+        android:layout_alignTop="@+id/imgMascotas"
+        android:layout_alignLeft="@+id/imgDeportes"
+        android:layout_alignStart="@+id/imgDeportes" />
+
+    <Button
+        android:text="Listo!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butListo"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteY="357dp"
+        tools:layout_editor_absoluteX="154dp"
+        android:layout_below="@+id/imgSalidas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:text="Elige categorías de tu interés"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="78dp"
+        android:id="@+id/textView18"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imgFlash"
+        android:layout_alignStart="@+id/imgFlash"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

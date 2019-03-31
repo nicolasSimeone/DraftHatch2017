@@ -1,0 +1,126 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <!-- The first child in the layout is for the main Activity UI-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:background="#ffffffff"
+        >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            tools:context="nupa.drafthatch.ActivityMapa"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Ubicación del Hatch!"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+        <requestFocus />
+
+    </AutoCompleteTextView>
+
+
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFecha"
+            android:text="Fecha"
+        android:layout_below="@+id/autoCompleteUbicacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abierto/Cerrado"
+            android:id="@+id/switchTipo"
+            android:checked="false"
+            android:layout_below="@+id/txtFecha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="26dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/txtDetalle"
+            android:text="Detalle"
+            android:layout_below="@+id/switchTipo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scrollbars="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Hatch!"
+            android:id="@+id/btnEnviarHatch"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Participantes"
+            android:id="@+id/SpinnerParticipantes"
+            android:spinnerMode="dialog"
+            android:visibility="invisible"
+            android:layout_alignBaseline="@+id/switchTipo"
+            android:layout_alignBottom="@+id/switchTipo"
+            android:layout_toRightOf="@+id/switchTipo"
+            android:layout_toEndOf="@+id/switchTipo" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBuscarDireccion"
+            android:src="@drawable/ic_gps"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/autoCompleteUbicacion"
+            android:layout_alignEnd="@+id/autoCompleteUbicacion" />
+
+
+    </RelativeLayout>
+
+    <!-- Side navigation drawer UI -->
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+</android.support.v4.widget.DrawerLayout>

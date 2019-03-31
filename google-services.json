@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "538086196917",
+    "firebase_url": "https://hatch-e1f54.firebaseio.com",
+    "project_id": "hatch-e1f54",
+    "storage_bucket": "hatch-e1f54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538086196917:android:68d0d7b1d16b02f9",
+        "android_client_info": {
+          "package_name": "nupa.drafthatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538086196917-sk196i1ml0ep8bpreb4hicbtijmdr1bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nupa.drafthatch",
+            "certificate_hash": "522A6D4F74EE00BFDBD5194053108B5A0E20B386"
+          }
+        },
+        {
+          "client_id": "538086196917-82t6msdbbo0bsn0rcs2cuao3q9pfnbet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-IgnKqsmm0TTXJYkxaaK02JfRRx8l8dY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538086196917-82t6msdbbo0bsn0rcs2cuao3q9pfnbet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

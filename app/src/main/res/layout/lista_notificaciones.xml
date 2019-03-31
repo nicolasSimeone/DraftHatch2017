@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imgCategoria"
+        android:src="@drawable/ic_pelota1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgCategoria"
+        android:layout_toEndOf="@+id/imgCategoria">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/textTitulo"
+        android:textSize="19sp"
+        android:textColor="#222222"
+        android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txtDescripcion"
+            android:layout_below="@+id/textTitulo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:id="@+id/txtFecha"
+
+        android:textColor="#999999"
+        android:textSize="12sp"
+            android:layout_alignBottom="@+id/txtDescripcion"
+            android:layout_toRightOf="@+id/txtDescripcion"
+            android:layout_toEndOf="@+id/txtDescripcion"
+            android:layout_marginLeft="43dp"
+            android:layout_marginStart="43dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

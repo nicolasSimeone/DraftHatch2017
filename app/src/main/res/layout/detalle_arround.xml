@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarNuevoHatch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/activismo_icon_small"
+        android:id="@+id/txtImagenCategoria"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarNuevoHatch" />
+
+    <TextView
+        android:text="G.Caminata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsuarioCreador"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtImagenCategoria"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDescripcion" />
+
+    <TextView
+        android:text="Hoy vamos a estar limpiando....."
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/txtDescripcion"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imgLocalizacion"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioCreador"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_hatches"
+        android:id="@+id/imgLocalizacion"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imgFecha"
+        android:layout_marginStart="31dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="31dp" />
+
+    <TextView
+        android:text="Bunge y el mar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDireccion"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtFecha"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toRightOf="@+id/imgLocalizacion"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_watch"
+        android:id="@+id/imgFecha"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imgDistancia"
+        app:layout_constraintRight_toRightOf="@+id/imgLocalizacion"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgLocalizacion" />
+
+    <TextView
+        android:text="Hoy a las 14"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:id="@+id/txtFecha"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipo"
+        app:layout_constraintRight_toRightOf="@+id/txtDireccion"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDireccion" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_person_distancia"
+        android:id="@+id/imgDistancia"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imgTipo"
+        app:layout_constraintRight_toRightOf="@+id/imgFecha"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgFecha" />
+
+    <TextView
+        android:text="1 Km"
+        android:layout_width="177dp"
+        android:layout_height="18dp"
+        android:id="@+id/txtDistancia"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipo"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="77dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtFecha"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgDistancia"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="77dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_hatch_open"
+        android:id="@+id/imgTipo"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imgParticipantes"
+        app:layout_constraintRight_toRightOf="@+id/imgDistancia"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgDistancia" />
+
+    <TextView
+        android:text="Abierto"
+        android:layout_width="70dp"
+        android:layout_height="19dp"
+        android:id="@+id/txtTipo"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="106dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgParticipantes"
+        android:layout_marginEnd="107dp"
+        app:layout_constraintRight_toRightOf="@+id/txtDistancia"
+        android:layout_marginTop="52dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgDistancia"
+        android:layout_marginLeft="106dp"
+        android:layout_marginRight="107dp"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_partcipantes"
+        android:id="@+id/imgParticipantes"
+        android:background="@null"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/imgTipo"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgTipo" />
+
+    <TextView
+        android:text="Calculando..."
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:id="@+id/txtParticipantes"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imgParticipantes"
+        android:layout_marginTop="4dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTipo"
+        app:layout_constraintTop_toTopOf="@+id/imgParticipantes"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:text="Calculando..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirmar"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/txtParticipantes"
+        android:layout_marginBottom="16dp" />
+
+</android.support.constraint.ConstraintLayout>

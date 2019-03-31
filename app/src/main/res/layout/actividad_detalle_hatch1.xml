@@ -1,0 +1,244 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarDetalleHatch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout_detalle_hatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The first child in the layout is for the main Activity UI-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            tools:context=".MainActivity"
+            android:background="#ffffffff"
+            android:clickable="false">
+
+            <View
+                android:layout_width="75dp"
+                android:layout_height="0dp"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/view"
+                android:layout_below="@+id/txtCategory"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Usuario"
+            android:id="@+id/txtCategory"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+           android:textColor="#0382f9"
+           android:textStyle="bold"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:gravity="center" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalle"
+            android:id="@+id/txtDetalle"
+            android:layout_marginTop="41dp"
+            android:layout_below="@+id/txtCategory"
+            android:layout_alignLeft="@+id/txtCategory"
+            android:layout_alignStart="@+id/txtCategory"
+            android:layout_above="@+id/imgDetalleDireccion"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="top|center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Direccion"
+            android:id="@+id/txtDireccion"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:id="@+id/view1"
+                android:layout_alignLeft="@+id/txtDireccion"
+                android:layout_alignStart="@+id/txtDireccion"
+                android:layout_below="@+id/txtDireccion"
+                android:layout_alignRight="@+id/txtDetalle"
+                android:layout_alignEnd="@+id/txtDetalle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Distancia"
+            android:id="@+id/txtCategoria"
+            android:layout_above="@+id/imgDetalleFecha"
+            android:layout_toRightOf="@+id/view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:id="@+id/view2"
+                android:layout_alignLeft="@+id/txtCategoria"
+                android:layout_alignStart="@+id/txtCategoria"
+                android:layout_below="@+id/txtCategoria"
+                android:layout_alignRight="@+id/txtDetalle"
+                android:layout_alignEnd="@+id/txtDetalle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Fecha"
+            android:id="@+id/txtFecha"
+            android:layout_alignBottom="@+id/imgDetalleFecha"
+            android:layout_alignLeft="@+id/view2"
+            android:layout_alignStart="@+id/view2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:id="@+id/view3"
+                android:layout_alignLeft="@+id/txtFecha"
+                android:layout_alignStart="@+id/txtFecha"
+                android:layout_below="@+id/txtFecha"
+                android:layout_alignRight="@+id/txtDetalle"
+                android:layout_alignEnd="@+id/txtDetalle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tipo"
+            android:id="@+id/Participantes"
+            android:layout_above="@+id/imgDetalleParticipantes"
+            android:layout_alignLeft="@+id/txtFecha"
+            android:layout_alignStart="@+id/txtFecha"
+            android:layout_alignRight="@+id/view3"
+            android:layout_alignEnd="@+id/view3" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:id="@+id/view4"
+                android:layout_alignLeft="@+id/Participantes"
+                android:layout_alignStart="@+id/Participantes"
+                android:layout_below="@+id/Participantes"
+                android:layout_alignRight="@+id/txtDetalle"
+                android:layout_alignEnd="@+id/txtDetalle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Participantes"
+            android:id="@+id/txtParticipantes"
+            android:layout_alignBottom="@+id/imgDetalleParticipantes"
+            android:layout_alignLeft="@+id/Participantes"
+            android:layout_alignStart="@+id/Participantes"
+            android:layout_alignRight="@+id/txtDetalle"
+            android:layout_alignEnd="@+id/txtDetalle" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_alignLeft="@+id/txtParticipantes"
+                android:layout_alignStart="@+id/txtParticipantes"
+                android:layout_below="@+id/txtParticipantes"
+                android:layout_alignRight="@+id/txtDetalle"
+                android:layout_alignEnd="@+id/txtDetalle" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNIRSE"
+            android:id="@+id/btnConfirmar"
+            android:background="#10b10d"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDetalleDireccion"
+                android:src="@drawable/ic_hatches"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDetalleDistancia"
+                android:src="@drawable/ic_person_distancia"
+                android:layout_below="@+id/view1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDetalleFecha"
+                android:src="@drawable/ic_watch"
+                android:layout_below="@+id/imgDetalleDistancia"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDetalleTipo"
+                android:src="@drawable/ic_hatch_open"
+                android:layout_below="@+id/imgDetalleFecha"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgDetalleParticipantes"
+                android:src="@drawable/ic_partcipantes"
+                android:layout_below="@+id/imgDetalleTipo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

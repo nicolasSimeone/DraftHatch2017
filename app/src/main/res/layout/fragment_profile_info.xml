@@ -1,0 +1,116 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nupa.drafthatch.ProfileInfoFragment">
+
+    <ImageView
+        android:id="@+id/imageViewShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imageuploadicon"
+        app:srcCompat="@drawable/user_icon_big"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nombre"
+        android:id="@+id/textView3"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        android:layout_marginBottom="40dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="E-mail"
+        android:id="@+id/textView6"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Johny@nupa.com.ar"
+        android:id="@+id/txtEmail"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtFechaNacimiento"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtFechaNacimiento" />
+
+    <TextView
+        android:text="Fecha de nacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView26"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="88dp" />
+
+    <TextView
+        android:text="No disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/txtFechaNacimiento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="104dp" />
+
+    <TextView
+        android:text="Johnny B. Good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/txtUserName"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewShow"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:text="Johnny Good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNombreUsario2"
+        app:layout_constraintLeft_toLeftOf="@+id/txtEmail"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.02" />
+
+
+</android.support.constraint.ConstraintLayout>
